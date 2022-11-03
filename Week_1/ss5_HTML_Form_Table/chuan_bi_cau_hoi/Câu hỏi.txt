@@ -1,0 +1,7 @@
+1. Mục đích ý nghĩa của form?
+
+2. Phân biệt các loại input text, radio, checkbox, date.
+
+3. Phân biệt sự khác nhau giữa POST và GET?
+
+4. Mục đích sử dụng table? Các thẻ tạo table?
