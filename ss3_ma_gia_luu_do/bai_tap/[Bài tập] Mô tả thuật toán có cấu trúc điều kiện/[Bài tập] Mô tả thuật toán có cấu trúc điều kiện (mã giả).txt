@@ -1,0 +1,17 @@
+START
+	INPUT a = ĐIỂM THI
+	IF a ≥ 75
+		OUTPUT “Loại A”
+    ELSE
+		IF a ≥ 60
+			OUTPUT “Loại B”
+		ELSE
+			IF a ≥ 45
+				OUTPUT “Loại C”
+			ELSE
+				IF a ≥ 30
+					OUTPUT “Loại D”
+				ELSE
+					OUTPUT “Loại E”
+END
+

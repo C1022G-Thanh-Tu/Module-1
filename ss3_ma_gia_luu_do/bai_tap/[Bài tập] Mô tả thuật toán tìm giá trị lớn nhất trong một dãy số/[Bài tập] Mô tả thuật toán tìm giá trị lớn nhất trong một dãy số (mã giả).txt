@@ -1,0 +1,10 @@
+START
+	INPUT N và dãy số a1, a2,...,an
+	a1 <- Max 
+	i <- 2
+	WHILE i > N
+		IF ai > MAX
+			OUTPUT ai <- MAX
+		i = i+1
+	OUTPUT “MAX”
+END 
