@@ -1,7 +1,16 @@
 1. Mục đích ý nghĩa của form?
-
+form là cơ chế cho phép người dùng nhập dữ liệu và gửi về server
 2. Phân biệt các loại input text, radio, checkbox, date.
-
+input text: nhập text ngắn
+input radio: chỉ được chọn một giá trị
+input checkbox: đươc chọn nhiều giá trị
+input date: nhập giá trị về ngày tháng năm
 3. Phân biệt sự khác nhau giữa POST và GET?
 
 4. Mục đích sử dụng table? Các thẻ tạo table?
+Mục đích: hiển thị dữ liệu dưới dạng cột và dòng
+Các thẻ tạo table:
+<table>
+<tr>
+<th>
+<td>
