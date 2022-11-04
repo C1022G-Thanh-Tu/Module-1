@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>CODEGYM</title>
+    <meta charset="UTF-8">
+    <style>
+        #bigger-div {
+            width: 50%;
+            background-color: rgba(255, 255, 0, 0.375);
+        }
+        #smaller-div {
+            padding: 8px;
+        }
+        h1 {
+            color: blue;
+            background-color: aquamarine;
+            margin: 0 0 10px 0;
+        }
+        td {
+            padding: 5px;
+        }
+        #address-input {
+            width: 200px;
+            height: 50px;
+        }
+    </style>
+</head>
+<body>
+<div id="bigger-div">
+    <div id="smaller-div">
+        <h1>ĐĂNG KÝ HỌC VIÊN</h1>
+        <form action="">
+            <table class="table-form">
+                <tr>
+                    <td><label for="yourname-input">Họ và Tên</label></td>
+                    <td><input type="text" name="yourname" id="yourname-input"></td>
+                </tr>
+                <tr>
+                    <td><label for="yourdate-input">Ngày sinh</label></td>
+                    <td><input type="text" name="yourdate" id="yourdate-input"></td>
+
+                </tr>
+                <tr>
+                    <td>Giới tính</td>
+                    <td>
+                        <input type="radio" name="gender" id="male-gender">
+                        <label for="male-gender">Nam</label>
+                        <input type="radio" name="gender" id="female-gender">
+                        <label for="female-gender">Nữ</label>
+                    </td>
+                </tr>
+                <tr>
+                    <td><label for="address-input">Địa chỉ</label></td>
+                    <td><input type="text" name="address" id="address-input"></td>
+                </tr>
+                <tr>
+                    <td>Lớp</td>
+                    <td>
+                        <select name="class" id="">
+                            <option value="">- Chọn lớp -</option>
+                            <option value="">1</option>
+                            <option value="">2</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td><label for="email-input">Email</label></td>
+                    <td><input type="email" name="email" id="email-input"></td>
+                </tr>
+                <tr>
+                    <td><label for="phone-input">Điện thoại</label></td>
+                    <td><input type="text" name="phone" id="phone-input"></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>
+                        <input type="submit" value="Gửi thông tin">
+                        <input type="reset" value="Nhập lại">
+                    </td>
+                </tr>
+            </table>
+        </form>
+    </div>
+</div>
+
+</body>
+</html>

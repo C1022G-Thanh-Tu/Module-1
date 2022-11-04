@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>CODEGYM</title>
+    <meta charset="UTF-8">
+    <style>
+        #bigger-div {
+            width: 50%;
+            border: 20px solid lightblue;
+        }
+        #smaller-div {
+            padding: 10px;
+        }
+        h1 {
+            width: 100%;
+            text-align: center;
+            background-color: red;
+            margin-top: 5px;
+        }
+        form {
+            margin-left: 50px;
+        }
+        .input-hobby {
+            color: rgba(255, 166, 0, 0.762);
+        }
+        #submit-reset {
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+<div id="bigger-div">
+    <div id="smaller-div">
+        <h1>SỞ THÍCH CỦA BẠN</h1>
+        <form action="">
+            <table class="table-form">
+                <tr>
+                    <td><label for="yourname-input">Họ và Tên</label></td>
+                    <td><input type="text" name="yourname" id="yourname-input"></td>
+                </tr>
+                <tr>
+                    <td><label for="email-input">Email</label></td>
+                    <td><input type="email" name="email" id="email-input"></td>
+                </tr>
+                <tr>
+                    <td style="vertical-align: top;"><span>Sở thích</span></td>
+                    <td>
+                        <table>
+                            <tr>
+                                <td>
+                                    <input type="checkbox" name="the_thao" id="the-thao-input" >
+                                    <label for="the-thao-input"class="input-hobby">Thể thao</label>
+                                </td>
+                                <td>
+                                    <input type="checkbox" name="am_nhac" id="am-nhac-input" >
+                                    <label for="am-nhac-input"class="input-hobby">Âm nhạc</label>
+                                </td>
+                                <td>
+                                    <input type="checkbox" name="doc_sach" id="doc-sach-input" >
+                                    <label for="doc-sach-input"class="input-hobby">Đọc sách</label>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <input type="checkbox" name="luot_web" id="luot-web-input" >
+                                    <label for="luot-web-input"class="input-hobby">Lướt web</label>
+                                </td>
+                                <td>
+                                    <input type="checkbox" name="choi_game" id="choi-game-input" >
+                                    <label for="choi-game-input"class="input-hobby">Chơi game</label>
+                                </td>
+                                <td>
+                                    <input type="checkbox" name="dien_anh" id="dien-anh-input" >
+                                    <label for="dien-anh-input"class="input-hobby">Điện ảnh</label>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <input type="checkbox" name="du_lich" id="du-lich-input" >
+                                    <label for="du-lich-input"class="input-hobby">Du lịch</label>
+                                </td>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+            </table>
+            <div id="submit-reset">
+                <input type="submit" value="Gửi thông tin">
+                <input type="reset" value="Nhập lại">
+            </div>
+        </form>
+
+    </div>
+</div>
+</body>
+</html>
