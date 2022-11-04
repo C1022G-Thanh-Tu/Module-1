@@ -1,0 +1,11 @@
+1. JavaScript (viết tắt là JS) là gì?
+
+2. Các cách nhúng JS vào HTML?
+
+3. Muốn chú thích ở JS, thì làm như thế nào?
+
+4. Các hàm dùng để nhập dữ liệu ở JS?
+
+5. Các hàm dùng để xuất dữ liệu ở JS?
+
+6. Ý nghĩa của debug và cách thực hiện debug ở Webstorm?
