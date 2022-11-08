@@ -1,0 +1,47 @@
+1. Biến là gì?
+Biến là một tên gọi được gắn cho một vùng nhớ chứa dữ liệu
+
+2. Cú pháp khai báo biến?
+var variableName 
+vd: var x;
+
+3. Các cách khai báo biến nào? Phân biệt sự khác nhau giữa các cách?
+
+
+4. Nêu 1 số quy tắc đặt tên biến?
+- Tên biến phải bắt đầu bằng một ký tự alphabet (a-z A-Z)
+- Theo sau ký tự đầu có thể là các ký tự chữ, số, ...
+- Tránh đặt tên biến trùng tên các từ khóa
+- Tên biến nên mô tả được ý nghĩa của nó
+- Tránh dùng các ký tự gây lầm lẫn
+- Tên biến có thể phân biệt chữ hoa và chữ thường 
+- Nên áp dụng các quy ước đặt tên biến chuẩn khi lập trình
+
+5. Kiểu dữ liệu là gì?
+Một kiểu dữ liệu cung cấp một bộ các giá trị mà từ đó một biểu thức (như biến, hàm ...) 
+có thể lấy giá trị của nó 
+
+6. Các kiểu dữ liệu trong javascript?
+- Chuỗi: Gồm các ký tự liên tiếp nhau
+- Số: Là số nguyên hoặc số thập phân
+- Boolean: Chỉ có hai giá trị là true và flase
+
+7. Các toán tử trong javascript? Độ ưu tiên các toán tử?
+- Toán tử toán học
+- Toán tử gán
+- Toán tử cộng chuỗi
+- Toán tử so sánh
+- Toán tử logic
+- Toán tử typeof
+Độ ưu tiên:
+- Trong một biểu thức có nhiều phép toán thì chúng sẽ lần lượt
+được đánh giá dực vào độ ưu tiên
+- Có thể sử dụng dấu ngoặc "()" để thay đổi dộ ưu tiên của các toán tử
+- Các toán tử có cùng độ ưu tiên thì sẽ thực hiện từ trái sang phải
+
+8. Phân biệt == và === ?
+==: equal to (bằng)
+===: equal value and equal type (Bằng giá trị và cùng kiểu dữ liệu)
+
+demo độ ưu  tiên của các toán tử
+giải thích thêm về cơ chế của hàm prompt()

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./stylesheet.css">
+</head>
+<body>
+<form action="">
+    <table>
+        <tr>
+            <th>Amount</th>
+            <th>From Currency</th>
+            <th>To Currency	</th>
+            <th></th>
+        </tr>
+        <tr>
+            <td><input type="text" id="amount-input"></td>
+            <td>
+                <select id="1st-currency-input">
+                    <option value="VND">VND</option>
+                    <option value="USD">USD</option>
+                </select>
+            </td>
+            <td>
+                <select id="2nd-currency-input">
+                    <option value="VND">VND</option>
+                    <option value="USD">USD</option>
+                </select>
+            </td>
+            <td><button type="button" id="convert-btn">Convert</button></td>
+        </tr>
+    </table>
+    <p id="result-text"></p>
+</form>
+</body>
+<script>
+    function convertCurrency() {
+        let amount = parseInt(document.getElementById('amount-input').value);
+        let fromCurrency = document.getElementById('1st-currency-input').value;
+        let toCurrency = document.getElementById('2nd-currency-input').value;
+        let result = document.getElementById('result-text');
+        if (fromCurrency == 'USD' && toCurrency == 'VND') {
+            result = amount/23000 + ' ' + 'Đ'
+        } else if (fromCurrency == 'VND' && toCurrency == 'USD') {
+            result = amount*23000 + ' ' +  '$'
+        } else if (fromCurrency == 'VND' && toCurrency == 'VND') {
+            result = amount + ' ' +  'Đ'
+        } else if (fromCurrency == 'USD' && toCurrency == 'USD') {
+            result = amount + ' ' +  '$'
+        }
+        document.getElementById('result-text').innerHTML = 'Result:'+ ' ' + result;
+    }
+
+    let convertBtn = document.getElementById('convert-btn');
+    convertBtn.addEventListener('click', convertCurrency);
+</script>
+</html>
