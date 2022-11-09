@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #month-input-js {
+            width: 10%;
+        }
+    </style>
+</head>
+<body>
+<h1>Kiểm tra số ngày trong tháng</h1>
+<input type="number" name="" id="month-input-js" value="" placeholder="Nhập tháng">
+<button type="button" id="check-day-js">Check</button>
+<p id="result-js">Đây là chỗ hiển thị kết quả</p>
+</body>
+<script>
+    function showDayResult() {
+        let monthInput = document.getElementById('month-input-js').value;
+        let resultDay = document.getElementById('result-js');
+        switch (monthInput) {
+            case '1':
+            case '3':
+            case '5':
+            case '7':
+            case '8':
+            case '10':
+            case '12':
+                resultDay = 'Tháng ' + monthInput + ' có 31 ngày';
+                document.getElementById('result-js').innerHTML = resultDay;
+                break;
+            case '4':
+            case '6':
+            case '9':
+            case '11':
+                resultDay = 'Tháng ' + monthInput + ' có 30 ngày';
+                document.getElementById('result-js').innerHTML = resultDay;
+                break;
+            case '2':
+                resultDay = 'Tháng ' + monthInput + ' có 28 hoặc 29 ngày';
+                document.getElementById('result-js').innerHTML = resultDay;
+                break;
+            default:
+                document.getElementById('result-js').innerHTML = 'Vui lòng nhập lại tháng';
+        }
+    }
+
+    let checkDay = document.getElementById('check-day-js');
+    checkDay.addEventListener('click', showDayResult);
+</script>
+</html>

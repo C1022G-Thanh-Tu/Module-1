@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+    </style>
+</head>
+<body>
+<h1>Tính chỉ số cân nặng</h1>
+<div id="weight-section">
+    <label for="weight-input-js">Nhập cân nặng: (kg)</label>
+    <input type="text" id="weight-input-js" value="">
+</div>
+<div id="height-section" style="margin-top: 18px;">
+    <label for="height-input-js">Nhập chiều cao: (m)</label>
+    <input type="text" id="height-input-js" value="">
+</div>
+<div id="check-btn" style="margin-top: 18px;">
+    <button type="button" id="check-bmi-js">Kiểm tra</button>
+</div>
+<p id="result-js"></p>
+</body>
+<script>
+    function showBMIResult() {
+        let weightInput = parseInt(document.getElementById('weight-input-js').value);
+        let heightInput = parseFloat(document.getElementById('height-input-js').value);
+        let bmiResult = document.getElementById('result-js');
+        bmiValue = weightInput / (heightInput * heightInput);
+        if (bmiValue < 18.5) {
+            bmiResult = 'Chỉ số BMI là: ' + bmiValue +  '. Bạn '+ "<b>" + 'Gầy' + "</b>";
+        } else if (bmiValue < 25) {
+            bmiResult = 'Chỉ số BMI là: ' + bmiValue + '. Bạn '+ "<b>" + 'Bình thường' + "</b>";
+        } else if (bmiValue < 30) {
+            bmiResult = 'Chỉ số BMI là: ' + bmiValue + '. Bạn '+ "<b>" + 'Thừa cân' + "</b>";
+        } else if (bmiValue < 300) {
+            bmiResult = 'Chỉ số BMI là: ' + bmiValue + '. Bạn '+ "<b>" + 'Béo phì' + "</b>";
+        } else {
+            bmiResult = 'Vui lòng nhập thông tin cân nặng và chiều cao tương ứng'
+        }
+        document.getElementById('result-js').innerHTML = bmiResult;
+    }
+
+    let checkBMI = document.getElementById('check-bmi-js');
+    checkBMI.addEventListener('click', showBMIResult);
+</script>
+</html>
