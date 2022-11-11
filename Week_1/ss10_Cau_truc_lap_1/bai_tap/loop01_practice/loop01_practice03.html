@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="wclassth=device-wclassth, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+<div id="bai3"></div>
+</body>
+<script>
+    let n1;
+    let n2 = 0;
+    let nx = 1;
+    let result = "0 1 ";
+
+    for (let i=2; i<20; i++) {
+        n1 = n2;
+        n2 = nx;
+        nx = n1+n2;
+        result+= nx + " ";
+    }
+    document.getElementById('bai3').innerHTML = result;
+</script>
+</html>
