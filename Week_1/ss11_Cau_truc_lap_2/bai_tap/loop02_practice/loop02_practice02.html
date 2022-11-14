@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <div id="bai2_02"></div>
+</body>
+<script>
+    let result = 1;
+    let count = 0;
+    while (count < 1) {
+        let numbInput = +prompt('Nhap so nguyen duong');
+        if (numbInput<=0) {
+            alert('So vua nhap khong phai la so nguyen duong')
+        } else {
+            for (i = 1; i<(numbInput+ 1); i++) {
+                result *= i;
+            } document.getElementById('bai2_02').innerHTML = 'Giai thừa của số vừa nhập là: '+result;
+            count++;
+        }
+    }
+</script>
+</html>

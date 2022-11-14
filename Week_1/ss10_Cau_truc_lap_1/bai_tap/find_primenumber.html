@@ -5,27 +5,24 @@
     <title>Title</title>
 </head>
 <body>
-
+    <p id="check-numb"></p>
 </body>
 <script>
-    let numb;
-    let kiemtra;
+    let numbInput;
     let count = 0;
-    while (count < 2) {
-        kiemtra = true;
-        numb = +prompt('nhập số nguyên')
-        for (let i = 2; i < numb;) {
-            if (numb % i == 0) {
-                // điều kiện trong if đúng => hàm sẽ thực hiện 2 hành động
-                // 1. Gán biến kiemtra = false
-                // 2. Thoát vòng lặp => nhảy tới if ở dưới
-                kiemtra = false;
+    let result = "";
+    let check = true;
+    while (count < 20) {
+        numbInput = prompt('Nhap so nguyen to');
+        for (i=2;i<numbInput;i++) {
+            if (numbInput%i == 0 && numbInput>1) {
+                check = false;
                 break;
             }
         }
-        // TH: kiemtra = false => function trong if k dc thực hiện
-        if (kiemtra) {
-            document.write(numb + ' Là số nguyên tố<br>');
+        if (check) {
+            result += (numbInput + ' la so nguyen to' + '</br>')
+            document.getElementById('check-numb').innerHTML = result;
             count++
         }
     }

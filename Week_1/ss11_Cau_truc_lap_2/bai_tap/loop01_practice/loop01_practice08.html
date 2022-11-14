@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<div id="bai8">
+    <button  style="font-size: 25px;">Bắt đầu</button>
+</div>
+<script>
+    function performGame() {
+        let numbRange = prompt('Bạn muốn số cần tìm nằm trong khoảng nào?');
+        let numbRandom = +Math.floor(Math.random() * numbRange);
+        for (i=0; i<3; i++) {
+            let numbInput = +prompt('Mời bạn nhập số dự đoán');
+            if (numbInput == numbRandom) {
+                alert('Bạn đã đoán đúng, xin chúc mừng!');
+                checkNumb.innerHTML = '<p> Chuc mung ban da doan dung </p>';
+                break;
+            } else if (numbInput > numbRandom) {
+                alert('Số bạn nhập lớn hơn, bạn cần nhập số nhỏ hơn');
+            } else {
+                alert('Số bạn nhập nhỏ hơn, bạn cần nhập số lớn hơn');
+            } checkNumb.innerHTML = '<p> Ban da qua 3 lan thu </p>';
+        }
+    }
+    let checkNumb =  document.getElementById('bai8');
+    checkNumb.addEventListener('click', performGame);
+</script>
+</body>
+</html>

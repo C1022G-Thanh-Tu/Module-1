@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bài 3</title>
+</head>
+<body>
+<div id="bai4_02"></div>
+<script>
+    let result = "";
+    for (let i=0; i<21; i++) {
+        result+= '*';
+    }
+    result += '</br>';
+    for (let j=0; j<5; j++) {
+        result+= '*';
+        for (let l=0; l<19; l++) {
+            result+='&ensp;'
+        }
+        result+= '*' + "</br>"
+    }
+    for (let k=0; k<21; k++) {
+        result+= '*';
+    }
+    document.getElementById('bai4_02').innerHTML = result;
+
+    //Tham khảo cách viết code gọn hơn
+    // for (i=1; i<8; i++) {
+    //     if (i==1 || i==7) {
+    //         for (let i=0; i<21; i++) {
+    //             result+= '*';
+    //         }
+    //         result += '</br>';
+    //     } else {
+    //         result+= '*';
+    //         for (let l=0; l<19; l++) {
+    //             result+='&ensp;'
+    //         }
+    //         result+= '*' + "</br>"
+    //     }
+    // }
+</script>
+</body>
+</html>

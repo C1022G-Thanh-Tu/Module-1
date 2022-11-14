@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="wclassth=device-wclassth, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+<div id="bai6"></div>
+</body>
+<script>
+    let numbInput;
+    let count = 0;
+    let sum = "";
+
+    while (count <30) {
+        numbInput = parseInt(prompt('Nhap so vao de kiem tra'));
+        if (numbInput % 7 == 0) {
+            sum = +sum + +numbInput;
+            count++
+        } else {
+            alert('Moi ban nhap so chia het cho 7');
+        }
+    } document.getElementById('bai6').innerHTML = 'Tong 30 so chia het cho 7 dau tien la: ' + sum;
+</script>
+</html>
