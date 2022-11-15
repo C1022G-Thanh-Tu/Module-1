@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="wclassth=device-wclassth, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+<div id="bai-tap"></div>
+<div id="result"></div>
+<script>
+    let stringInput = prompt('Nhập chuỗi bất kỳ');
+    let result="""";
+    for (i=0; i<stringInput.length; i++) {
+        if (stringInput[i] == stringInput[i].toUpperCase()) {
+            result+=stringInput[i].toLowerCase();
+        }
+        if (stringInput[i] == stringInput[i].toLowerCase()) {
+            result+=stringInput[i].toUpperCase();
+        }
+    }
+    document.getElementById('bai-tap').innerHTML = result;
+</script>
+</body>
+</html>

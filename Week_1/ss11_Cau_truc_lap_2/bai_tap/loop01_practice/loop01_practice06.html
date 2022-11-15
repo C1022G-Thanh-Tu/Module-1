@@ -10,18 +10,15 @@
 <div id="bai6"></div>
 </body>
 <script>
-    let numbInput;
     let count = 0;
     let sum = "";
-
+    let i = 0;
     while (count <30) {
-        numbInput = parseInt(prompt('Nhap so vao de kiem tra'));
-        if (numbInput % 7 == 0) {
-            sum = +sum + +numbInput;
-            count++
-        } else {
-            alert('Moi ban nhap so chia het cho 7');
+        if (i % 7 == 0) {
+            sum = +sum + +i;
+            count++;
         }
+        i++;
     } document.getElementById('bai6').innerHTML = 'Tong 30 so chia het cho 7 dau tien la: ' + sum;
 </script>
 </html>

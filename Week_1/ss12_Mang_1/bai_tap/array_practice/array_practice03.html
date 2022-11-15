@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="wclassth=device-wclassth, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+<div id="bai-tap"></div>
+<div id="result"></div>
+<script>
+    let array = [];
+    let sum = 0;
+    let max;
+    let index = 0;
+    let n = +prompt('Nhập số lượng của mảng');
+    let avg = 0;
+    for (i=0; i<n; i++) {
+        array[i] = +prompt('Nhập số thứ ' + (i+1));
+        if (i==0) {
+            max = array[0];
+        }
+        if (array[i] > max) {
+            max = array[i];
+            index = i;
+        }
+        sum = sum + +array[i]
+    }
+    avg = sum/n;
+    document.getElementById('bai-tap').innerHTML = 'Số lớn nhất trong dãy số là: ' + max + ' tại vị trí: ' + index;
+    document.getElementById('result').innerHTML = 'Gía trị trung bình của các phần tử có trong mảng là: ' + avg;
+</script>
+</body>
+</html>

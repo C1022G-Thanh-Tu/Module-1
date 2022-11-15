@@ -1,0 +1,13 @@
+1. Mục đích sử dụng mảng?
+
+
+2. Có bao nhiêu cách khai báo mảng ở JS?
+
+
+3. Mảng chia làm bao nhiêu loại?
+
+
+4. Có bao nhiêu cách input các giá trị vào trong 1 mảng?
+
+
+5. Có bao nhiêu cách output mảng?

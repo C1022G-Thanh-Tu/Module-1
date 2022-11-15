@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="wclassth=device-wclassth, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+<div id="bai-tap"></div>
+<div id="result"></div>
+<script>
+    let numbInput = prompt('Nhập số bất kỳ vào');
+    let numbArray = Array.from(String(numbInput), Number);
+    for (i =0; i<numbArray.length; i++) {
+        if (numbArray[i] %2 == 0 && numbArray[i-1] %2 ==0) {
+            numbArray.splice(i, 0 ,'-');
+        }
+    }
+    console.log(numbArray.join(''));
+</script>
+</body>
+</html>
