@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="wclassth=device-wclassth, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./tempo_stylesheet.css">
+</head>
+<body>
+<div id="form-input">
+    <form action="">
+        <label for="text-input-js">Nhập từ:</label>
+        <input type="text" name="" id="text-input-js" value="">
+        <button type="button" id="btn-js" onclick="showTranslate()">Dịch</button>
+    </form>
+</div>
+<div id="bai-tap"></div>
+<p id="result"></p>
+<script>
+    let result = "";
+    function showTranslate() {
+        let arrayVn = ['táo', 'chuối', 'ngôn ngữ'];
+        let arrayEng = ['apple', 'banana', 'language'];
+        let textInput = document.getElementById('text-input-js').value;
+        let i = arrayVn.indexOf(textInput);
+        let j = arrayEng.indexOf(textInput);
+        if (i!=-1) {
+            result+=arrayEng[i];
+        } else if (j!=-1) {
+            result+=arrayVn[j];
+        } else {
+            result = "";
+        }
+        if (result!="") {
+            document.getElementById('result').innerHTML = result;
+        }
+    }
+</script>
+</body>
+</html>
