@@ -20,21 +20,20 @@
 <script>
     let result = "";
     function showTranslate() {
-        let arrayVn = ['táo', 'chuối', 'ngôn ngữ'];
-        let arrayEng = ['apple', 'banana', 'language'];
+        let arrayVn = ['táo', 'chuối', 'chuột', 'ngôn ngữ'];
+        let arrayEng = ['apple', 'banana', 'mouse', 'language'];
         let textInput = document.getElementById('text-input-js').value;
         let i = arrayVn.indexOf(textInput);
         let j = arrayEng.indexOf(textInput);
+        let trans = document.getElementById('result');
         if (i!=-1) {
             result+=arrayEng[i];
         } else if (j!=-1) {
             result+=arrayVn[j];
-        } else {
-            result = "";
+        } else if (i==-1 || j==-1) {
+            alert('Không có kết quả của từ vừa nhập');
         }
-        if (result!="") {
-            document.getElementById('result').innerHTML = result;
-        }
+        trans.innerHTML = result;
     }
 </script>
 </body>
