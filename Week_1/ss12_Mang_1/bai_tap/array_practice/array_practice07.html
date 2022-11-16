@@ -47,8 +47,8 @@
                 array[j] = array[j+1];
             }
             i--
+            array[array.length-1] = 0;
         }
-        array[array.length-1] = 0;
     }
     console.log(array);
     document.getElementById('result').innerHTML = result;

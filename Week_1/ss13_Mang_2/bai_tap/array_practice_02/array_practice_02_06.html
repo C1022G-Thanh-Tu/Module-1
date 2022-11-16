@@ -11,18 +11,14 @@
     <div id="bai-tap"></div>
     <p id="result"></p>
 <script>
-    let array = [];
-    let result= "";
-    let numbRange = prompt('Nhập số lượng phần tử bạn muốn có trong mảng');
-    for (let i=0; i<numbRange; i++) {
-        array[i] = prompt('Nhập các phần tử');
-    }
-    for (let i=0; i<numbRange; i++) {
-        if (array[i] == '-') {
-            array[i] == '_';
+    let stringInput = prompt('Nhập chuỗi bất kỳ');
+    let stringArray = stringInput.split('');
+    for (let i=0; i<stringArray.length; i++) {
+        if (stringArray[i] == '-') {
+        stringArray[i] == '_';
         }
     }
-    console.log(array);
+    console.log(stringArray);
 </script>
 </body>
 </html>
