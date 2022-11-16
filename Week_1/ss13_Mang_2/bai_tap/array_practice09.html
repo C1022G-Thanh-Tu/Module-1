@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="wclassth=device-wclassth, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./tempo_stylesheet.css">
+</head>
+<body>
+    <div id="bai-tap"></div>
+    <p id="result"></p>
+<script>
+    let a = [];
+    let b = [];
+    let c = [];
+    for (let i=0; i<4; i++) {
+        a[i] = parseInt(prompt('Nhập số thứ ' + (i+1) + ' mảng a'));
+    }
+    for (let j=0; j<4; j++) {
+        b[j] = parseInt(prompt('Nhập số thứ ' + (j+1) + ' mảng b'));
+    }
+    c = a.concat(b);
+    console.log(c);
+</script>
+</body>
+</html>

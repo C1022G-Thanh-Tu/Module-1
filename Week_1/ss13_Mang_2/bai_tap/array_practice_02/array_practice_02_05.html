@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="wclassth=device-wclassth, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./tempo_stylesheet.css">
+</head>
+<body>
+    <div id="bai-tap"></div>
+    <p id="result"></p>
+<script>
+    let n = +prompt('Nhập số lượng phần tử bạn muốn có trong mảng đầu tiên');
+    let m = +prompt('Nhập số lượng phần tử bạn muốn có trong mảng thứ hai');
+    let array1 = [];
+    let array2 = [];
+    let result = "";
+    if (n!=m) {
+        result = 'Hai mảng khởi tạo không giống nhau'
+    } else {
+        for (let i=0; i<n; i++) {
+            array1[i] = prompt(`Nhập phần tử array1[${i}]cho mảng đầu tiên`);
+        }
+        for (let i=0; i<n; i++) {
+            array2[i] = prompt(`Nhập phần tử array2[${i}]cho mảng thứ hai`);
+        }
+        for (let i=0; i<n; i++) {
+            if (array1[i] == array2[i]) {
+                result = 'Hai mảng khởi tạo giống nhau';
+            } else {
+                result = 'Hai mảng khởi tạo không giống nhau';
+            }
+        }
+    }
+    document.getElementById('result').innerHTML = result;
+</script>
+</body>
+</html>
