@@ -16,12 +16,10 @@
         array[i] = parseInt(prompt('Nhập số thứ ' + (i+1)));
     }
     let v = parseInt(prompt('Nhập số nguyên V'));
-    for (i=0; i<10; i++) {
-        if (v === array[i]) {
-            result = v + ' Có trong mảng';
-        } else {
-            result = v + ' Không có trong mảng';
-        }
+    if (array.indexOf(v) != -1) {
+        result = v + ' Có trong mảng';
+    } else {
+        result = v + ' Không có trong mảng';
     }
     document.getElementById('bai-tap').innerHTML = result;
 </script>
