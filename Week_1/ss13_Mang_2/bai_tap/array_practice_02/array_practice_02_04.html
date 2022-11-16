@@ -11,15 +11,9 @@
     <div id="bai-tap"></div>
     <p id="result"></p>
 <script>
-    let textInput = [];
-    textInput = prompt('Nhập một chuỗi bất kỳ');
-    let count = 0;
-    for (let i=0; i<textInput.length; i++) {
-        if (textInput[i] != +textInput[i]) {
-            count++
-        }
-    }
-    document.getElementById('result').innerHTML = 'Chuỗi vừa nhập có ' + count + ' từ';
+    let stringInput=prompt('Nhập chuỗi bất kỳ');
+    let newArray=stringInput.split(' ');
+    document.getElementById('result').innerHTML='Số từ có trong chuỗi là: '+ newArray.length;
 </script>
 </body>
 </html>
