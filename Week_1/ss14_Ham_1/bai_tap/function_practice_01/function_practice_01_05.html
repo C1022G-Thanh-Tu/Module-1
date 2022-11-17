@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<div id="bai-tap"></div>
+<p id="result"></p>
+<script>
+    let arr1 = ['Polaris', 'Aldebaran', 'Deneb', 'Vega', 'Altair', 'Dubhe', 'Regulus'];
+    let arr2 = ['Ursa Minor', 'Tarurus', 'Cygnus', 'Lyra', 'Aquila', 'Ursa', 'Major', 'Leo']
+    function showArrName(name) {
+        if (name !=-1) {
+            return arr2[name];
+        }
+    }
+    let nameInput = prompt('Nhập tên ngôi sao');
+    let index1 = arr1.indexOf(nameInput);
+    document.getElementById('result').innerHTML = showArrName(index1);
+</script>
+</body>
+</html>

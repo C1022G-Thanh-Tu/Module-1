@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<div id="bai-tap"></div>
+<p id="result"></p>
+<script>
+    function performFunction(para1, para2) {
+        if (para1 > para2) {
+            alert('Hiện thông báo')
+        } else if (para1 < para2) {
+            return para1 + para2
+        }
+    }
+    let arg1 = +prompt('Nhập tham số thứ nhất');
+    let arg2 = +prompt('Nhập tham số thứ hai');
+    console.log(performFunction(arg1, arg2));
+</script>
+</body>
+</html>

@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<div id="bai-tap"></div>
+<p id="result"></p>
+<script>
+    function calcArea(x) {
+        return Math.pow(x, 2)*Math.PI
+    }
+    function calcPerimeter(x) {
+        return (x*2)*Math.PI
+    }
+    let numberInput = prompt('Nhập giá trị bán kính bất kỳ');
+    document.getElementById('result').innerHTML = 'Diện tích hình tròn: ' + calcArea(numberInput);
+    document.getElementById('bai-tap').innerHTML = 'Chu vi hình tròn: ' + calcPerimeter(numberInput);
+</script>
+</body>
+</html>
