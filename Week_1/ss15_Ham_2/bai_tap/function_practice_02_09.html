@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="wclassth=device-wclassth, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+<div id="bai-tap"></div>
+<p id="result"></p>
+<script>
+    let stringInput = prompt('Nhập mảng ký tự bất kỳ');
+    let charArray = stringInput.split('');
+    console.log(charArray);
+    let charInput = prompt('Nhập một ký tự bất kỳ');
+    let count = 0;
+    let result = "";
+    let flag = false;
+    function showFunction(array) {
+        for (i=0; i<array.length; i++) {
+            if (charInput == array[i]) {
+                flag = true
+                count++
+            }
+        }
+        if (flag) {
+            result = 'Số lần xuất hiện của ký tự ' + charInput ' trong mảng là: ' + count;
+        } else {
+            result = -1;
+        }
+        return result
+    }
+    console.log(showFunction(charArray));
+</script>
+</body>
+</html>
