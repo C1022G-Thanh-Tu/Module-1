@@ -12,7 +12,6 @@
 <script>
     let stringInput = prompt('Nhập mảng ký tự bất kỳ');
     let charArray = stringInput.split('');
-    console.log(charArray);
     let charInput = prompt('Nhập một ký tự bất kỳ');
     let count = 0;
     let result = "";
@@ -25,7 +24,7 @@
             }
         }
         if (flag) {
-            result = 'Số lần xuất hiện của ký tự ' + charInput ' trong mảng là: ' + count;
+            result = 'Số lần xuất hiện của ký tự ' + charInput + ' trong mảng là: ' + count;
         } else {
             result = -1;
         }
