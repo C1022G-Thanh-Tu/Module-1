@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<div>
+    <p id="result"></p>
+</div>
+<div>
+    <p id="bai-tap"></p>
+</div>
+<script>
+    class Temperature {
+        constructor(cDegree) {
+            this.cDegree = cDegree;
+        }
+        changeToF() {
+            return 'Độ F tương ứng là: ' + (9/5*this.cDegree +32) + 'F';
+        }
+        changeToK() {
+            return 'Độ Kevin tương ứng là: ' + (this.cDegree + 273.15) +'K';
+        }
+    }
+    let celTemp = new Temperature(25);
+    document.getElementById('result').innerHTML = celTemp.changeToF();
+    document.getElementById('bai-tap').innerHTML = celTemp.changeToK();
+</script>
+</body>
+</html>
