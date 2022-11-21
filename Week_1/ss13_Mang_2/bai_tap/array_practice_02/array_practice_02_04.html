@@ -13,7 +13,13 @@
 <script>
     let stringInput=prompt('Nhập chuỗi bất kỳ');
     let newArray=stringInput.split(' ');
-    document.getElementById('result').innerHTML='Số từ có trong chuỗi là: '+ newArray.length;
+    let otherArray = [];
+    for (i=0; i<newArray.length; i++) {
+        if (newArray[i] != '') {
+            otherArray.push(newArray[i]);
+        }
+    }
+    document.getElementById('result').innerHTML='Số từ có trong chuỗi là: '+ otherArray.length;
 </script>
 </body>
 </html>
