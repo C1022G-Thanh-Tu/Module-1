@@ -16,8 +16,11 @@
     for (let i=0; i<numbRange; i++) {
         array[i] = prompt('Nhập các phần tử');
     }
-    console.log(array.reverse().join(''));
-    document.getElementById('result').innerHTML = result;
+    let newArray = [];
+    for (let i=0; i<numbRange; i++) {
+        newArray.unshift(array[i]);
+    }
+    console.log(newArray.join());
 </script>
 </body>
 </html>
