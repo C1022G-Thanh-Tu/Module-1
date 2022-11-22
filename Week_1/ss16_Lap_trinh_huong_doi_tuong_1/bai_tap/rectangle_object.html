@@ -42,14 +42,11 @@
     // Thay đổi chiều dài + rộng của hình chữ nhật = sử dụng setter
     rectangleData.setLength(300);
     rectangleData.setWidth(200);
-
-    // let length = rectangleData.getLength();
-    // let width = rectangleData.getWidth();
     // Vẽ = canvas
     let drawCanvas = document.getElementById('my-canvas');
     let ctx = drawCanvas.getContext("2d");
     ctx.beginPath();
-    ctx.rect(20, 20, this.length, this.width);
+    ctx.rect(20, 20, rectangleData.getLength(), rectangleData.getWidth());
     ctx.stroke();
     document.getElementById('result').innerHTML = rectangleData.calcArea();
     document.getElementById('bai-tap').innerHTML = rectangleData.calcPerimeter();

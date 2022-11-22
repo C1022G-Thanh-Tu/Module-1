@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<div>
+    <p id="result"></p>
+</div>
+<div>
+    <p id="bai-tap"></p>
+</div>
+<script>
+    class Apple {
+        constructor(weight) {
+            this.weight = weight;
+        }
+        // decrease() {
+        //     if (isEmpty()) {
+        //         document.write('Hết táo');
+        //     } else {
+        //         this.weight--;
+        //     }
+        // }
+        isEmpty() {
+            if (this.weight <= 0) {
+                return true;
+            } else {
+                return false;
+            }
+        }
+        getWeight() {
+            return this.weight;
+        }
+        setWeight(weight) {
+            this._weight = weight;
+        }
+    }
+    class Human {
+        constructor(name, gender, weight) {
+            this.name = name;
+            this.gender = gender;
+            this.weight = weight;
+        }
+        isMale() {
+            if (this.gender == 1) {
+                return true;
+            } else {
+                return  false;
+            }
+        }
+        setGender() {
+            if (this.gender == 1) {
+                document.write(this.name + ' là nam');
+                document.write('</br>');
+            } else if (this.gender == 0) {
+                document.write(this.name + ' là nữ');
+                document.write('</br>');
+                document.write('</br>');
+            }
+        }
+        checkApple1(apple) {
+            if (apple.isEmpty()) {
+                alert('Hết táo để ăn');
+            } else {
+                this.eat1(apple);
+            }
+        }
+        checkApple2(apple) {
+            if (apple.isEmpty()) {
+                alert('Hết táo để ăn');
+            } else {
+                this.eat2(apple);
+            }
+        }
+        eat1(apple) {
+            let result = "";
+            let count = 0;
+            document.write('Số lượng táo ban đầu là ' + apple.weight + ' dvt');
+            document.write('</br>');
+            document.write('</br>');
+            while (count < 5) {
+                document.write(this.name + ' ăn táo');
+                document.write('</br>');
+                document.write('Cân nặng của ' + this.name + ' là ' + ++this.weight + ' dvt');
+                document.write('</br>');
+                document.write('Quả táo còn: ' + --apple.weight + ' dvt');
+                document.write('</br>');
+                document.write('</br>');
+                count++;
+            }
+        }
+        eat2(apple) {
+            let result = "";
+            let count = 0;
+            while (count < 5) {
+                document.write(this.name + ' ăn táo');
+                document.write('</br>');
+                document.write('Cân nặng của ' + this.name + ' là ' + ++this.weight + ' dvt');
+                document.write('</br>');
+                document.write('Quả táo còn: ' + --apple.weight + ' dvt');
+                document.write('</br>');
+                document.write('</br>');
+                count++;
+            }
+        }
+        say(string) {
+            document.write(string);
+        }
+        getName() {
+            return this.name;
+        }
+        setName(name) {
+            this.name = name;
+        }
+        getWeight() {
+            return this.weight;
+        }
+        setWeight(weight) {
+            this.weight = weight;
+        }
+    }
+    let adamObj = new Human('Adam', 1, 60);
+    let evaObj = new Human('Eva', 0, 40);
+    let appleObj = new Apple(10);
+    // adamObj.isMale();
+    // evaObj.isMale();
+    adamObj.setGender();
+    evaObj.setGender();
+    adamObj.checkApple1(appleObj);
+    evaObj.checkApple2(appleObj);
+    // adamObj.eat(appleObj);
+    // evaObj.eat(appleObj);
+    // adamObj.say('Tôi là Adam');
+    // evaObj.say('Tôi là Eva');
+</script>
+</body>
+</html>
