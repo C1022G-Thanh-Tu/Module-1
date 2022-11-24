@@ -6,16 +6,20 @@
 </head>
 <body>
 <div>
+    <label for="numb-input">Nhập số</label>
+    <input type="text" name="" id="numb-input" value="" onkeyup="showTextNumb()">
     <p id="result"></p>
 </div>
 <script>
-    let strArray = ['không', 'một', 'hai', 'ba', 'bốn', 'năm', 'sáu', 'bảy', 'tám', 'chín'];
-    let numbInput = prompt('Nhập vào 1 số: ');
-    let result = '';
-    for (let i = 0; i < numbInput.length; i++) {
-        result += strArray[numbInput[i]] + ' ';
+    function showTextNumb() {
+        let strArray = ['không', 'một', 'hai', 'ba', 'bốn', 'năm', 'sáu', 'bảy', 'tám', 'chín'];
+        let numbInput = document.getElementById('numb-input').value;
+        let result = '';
+        for (let i = 0; i < numbInput.length; i++) {
+            result += strArray[numbInput[i]] + ' ';
+        }
+        document.getElementById('result').innerHTML = result;
     }
-    document.getElementById('result').innerHTML = result;
 </script>
 </body>
 </html>
