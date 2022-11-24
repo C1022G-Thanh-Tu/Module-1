@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    alert('Menu: 1. Cafe, 2. Cam vắt, 3. Nước ép cà rốt, 4. Nước ép cà chua, 5. Nước lọc, 6. Nước dừa');
+    let order = prompt('Nhập thức uống bạn muốn order');
+    let quantity = +prompt('Nhập số lượng đồ uống bạn đã chọn');
+    let result = 0;
+    do {
+        switch (order) {
+            case 'Cafe':
+                result = 120000 * quantity;
+                break;
+            case 'Cam vắt':
+                result = 250000 * quantity;
+                break;
+            case 'Nước ép cà rốt':
+                result = 250000 * quantity;
+                break;
+            case 'Nước ép cà chua':
+                result = 200000 * quantity;
+                break;
+            case 'Nước lọc':
+                result = 100000 * quantity;
+                break;
+            case 'CNước dừa':
+                result = 150000 * quantity;
+                break;
+        }
+    }
+    while(order === 'Tính tiền');
+    alert('Tổng tiền bạn cần trả là: ' + result + ' VNĐ');
+</script>
+</body>
+</html>
