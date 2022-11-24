@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<script>
+    let str1 = prompt('Nhập chuỗi 1');
+    let str2 = prompt('Nhập chuỗi 2');
+    let numerators = str1.split('');
+    let denominators = str2.split('');
+    let newArray = [];
+    for (i=0; i<numerators.length; i++) {
+        newArray[i] = numerators[i]/denominators[i]
+    }
+    let result = "";
+    let max = newArray[0];
+    for (i=0; i<newArray.length; i++) {
+        if (newArray[i] > max) {
+            max = newArray[i];
+        }
+    }
+    let index = newArray.indexOf(max);
+    console.log(index);
+</script>
+</body>
+</html>

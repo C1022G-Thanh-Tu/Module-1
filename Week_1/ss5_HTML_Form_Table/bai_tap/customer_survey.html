@@ -92,9 +92,9 @@
             <label for="gender-identity-input Nonbinary">Nonbinary</label>
         </div>
         <div>
-            <input type="radio" name="gender-identity" id="other-input-js" class="input-form">
+            <input type="radio" name="gender-identity" id="other-input-js" class="input-form" onclick="showResult('text')">
             <label for="other-input-js" onclick="showResult('text')">Other</label>
-            <input type="text" name="gender-identity" id="cmt-input-js" class="gender-input-text" onclick="showResult('input')" value="" onkeyup="countChar()">
+            <input type="text" name="gender-identity" id="cmt-input-js" class="gender-input-text" onclick="showResult('text')" value="" onkeyup="countChar()">
             <p id="text-js" class="text-change">Maximum of 250 characters.    Currently Used: <span id="number-count">0</span> characters.</p>
         </div>
     </div>
@@ -249,7 +249,6 @@
     function showResult(operate) {
         switch(operate) {
             case 'text':
-            case 'input':
                 document.getElementById('text-js').classList.add('open');
                 document.getElementById('other-input-js').checked = true;
                 break;

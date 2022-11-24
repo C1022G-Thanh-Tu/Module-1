@@ -134,6 +134,102 @@
     // evaObj.eat(appleObj);
     // adamObj.say('Tôi là Adam');
     // evaObj.say('Tôi là Eva');
+
+    // Cách 2
+    // class Apple {
+    //     constructor(weight) {
+    //         this.weight = weight;
+    //     }
+    //     decrease() {
+    //         if (this.isEmpty()) {
+    //             return alert('Hết táo');
+    //         } else {
+    //             return --this.weight;
+    //         }
+    //     }
+    //     isEmpty() {
+    //         if (this.weight <= 0) {
+    //             return true;
+    //         } else {
+    //             return false;
+    //         }
+    //     }
+    //     getWeight() {
+    //         return this.weight;
+    //     }
+    //     setWeight(weight) {
+    //         this._weight = weight;
+    //     }
+    // }
+    // class Human {
+    //     constructor(name, gender, weight) {
+    //         this.name = name;
+    //         this.gender = gender;
+    //         this.weight = weight;
+    //     }
+    //     isMale() {
+    //         if (this.gender == 1) {
+    //             return true;
+    //         } else if (this.gender == 0) {
+    //             return  false;
+    //         }
+    //     }
+    //     setGender() {
+    //         if (this.isMale()) {
+    //             document.write(this.name + ' là nam');
+    //             document.write('</br>');
+    //         } else {
+    //             document.write(this.name + ' là nữ');
+    //             document.write('</br>');
+    //             document.write('</br>');
+    //         }
+    //     }
+    //     checkApple(apple) {
+    //         return apple.decrease();
+    //     }
+    //     eat(apple) {
+    //         return ++this.weight;
+    //     }
+    //     say(string) {
+    //         document.write(string);
+    //     }
+    //     getName() {
+    //         return this.name;
+    //     }
+    //     setName(name) {
+    //         this.name = name;
+    //     }
+    //     getWeight() {
+    //         return this.weight;
+    //     }
+    //     setWeight(weight) {
+    //         this.weight = weight;
+    //     }
+    // }
+    // let adamObj = new Human('Adam', 1, 60);
+    // let evaObj = new Human('Eva', 0, 40);
+    // let appleObj = new Apple(10);
+    // let result = "";
+    // let count = 0;
+    // document.write('Trọng lượng táo ban đầu là ' + appleObj.getWeight() +  ' dvt');
+    // document.write('</br>');
+    // document.write('</br>');
+    // while (count < 5) {
+    //     document.write('Adam ăn táo');
+    //     document.write('</br>');
+    //     document.write('Cân nặng của Adam là ' + adamObj.eat(appleObj) + ' dvt');
+    //     document.write('</br>');
+    //     document.write('Quả táo còn: ' +  adamObj.checkApple(appleObj) + ' dvt');
+    //     document.write('</br>');
+    //     document.write('Eva ăn táo');
+    //     document.write('</br>');
+    //     document.write('Cân nặng của Eva là ' + evaObj.eat(appleObj) + ' dvt');
+    //     document.write('</br>');
+    //     document.write('Quả táo còn: ' + adamObj.checkApple(appleObj) + ' dvt');
+    //     document.write('</br>');
+    //     document.write('</br>');
+    //     count++;
+    // }
 </script>
 </body>
 </html>

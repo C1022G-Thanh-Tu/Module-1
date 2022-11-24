@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<label for="numb-input-js">Nhập số:</label>
+<input type="text" name="" id="numb-input-js" value="" placeholder="Nhập số" oninput="showResult()">
+<div>
+    <p id="result"></p>
+</div>
+<script>
+    function showResult() {
+        let numbArray = ['1', '2', '3', '4'];
+        let strArray = ['một', 'hai', 'ba', 'bốn'];
+        let numbInput = document.getElementById('numb-input-js').value;
+        let indexNumb = numbArray.indexOf(numbInput);
+        let result = '';
+        if (indexNumb!=-1) {
+            result = strArray[indexNumb];
+        } else if (numbInput == "") {
+            result = "";
+        } else if (indexNumb == -1) {
+            result = 'Không có kết quả'
+        }
+        document.getElementById('result').innerHTML = result;
+    }
+</script>
+</body>
+</html>

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <label for="salary-input-js">Nhập lương</label>
+    <input type="text" name="" id="salary-input-js" value="" placeholder="VNĐ" oninput="showSalary()">
+    <div>
+        <p id="result"></p>
+    </div>
+<script>
+    function showSalary() {
+        let salary = document.getElementById('salary-input-js').value;
+        let result = "";
+        if (salary >= 15000000) {
+            result = salary - salary*20/100;
+        } else if (salary >= 7000000) {
+            result = salary - salary*10/100;
+        } else {
+            result = salary - salary*5/100;
+        }
+        document.getElementById('result').innerHTML = 'Số tiền lương ròng của nhân viên nhận được là: ' + result + ' VNĐ';
+    }
+</script>
+</body>
+</html>

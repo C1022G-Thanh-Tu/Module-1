@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let str1 = prompt('Nhập chuỗi a');
+    let str2 = prompt('Nhập chuỗi b');
+    let a = str1.split('');
+    let b = str2.split('');
+    let c = [];
+    let index;
+    for (i=0; i<b.length; i++) {
+        index = a.indexOf(b[i]);
+        if (index==-1) {
+            c.push(b[i]);
+        }
+    }
+    console.log(c);
+</script>
+</body>
+</html>

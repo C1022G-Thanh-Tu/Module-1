@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <label for="character-input-js">Nhập ký tự:</label>
+    <input type="text" name="" id="character-input-js" value="" placeholder="Nhập ký tự" oninput="showResult()">
+    <div>
+        <p id="result"></p>
+    </div>
+<script>
+    function showResult() {
+        let char = document.getElementById('character-input-js').value;
+        let result = "";
+        switch (char) {
+            case 'o':
+            case 'O':
+            case 'u':
+            case 'U':
+            case 'i':
+            case 'I':
+            case 'a':
+            case 'A':
+            case 'e':
+            case 'E':
+                result = 'Ký tự vừa nhập là nguyên âm';
+            break;
+            case '':
+                result="";
+            break;
+            default:
+                result = 'Ký tự vừa nhập là phụ âm';
+        }
+        document.getElementById('result').innerHTML = result;
+    }
+</script>
+</body>
+</html>
