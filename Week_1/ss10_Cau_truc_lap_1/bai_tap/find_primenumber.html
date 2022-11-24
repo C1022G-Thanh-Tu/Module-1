@@ -15,8 +15,8 @@
     let check = true;
     while (count < 20) {
         numbInput = prompt('Nhap so nguyen to');
-        for (i=2;i<numbInput;i++) {
-            if (numbInput%i == 0 && numbInput>1) {
+        for (let i=2;i<numbInput;i++) {
+            if (numbInput%i === 0 && numbInput>1) {
                 check = false;
                 break;
             }
@@ -24,7 +24,7 @@
         if (check) {
             result += (numbInput + ' la so nguyen to' + '</br>')
             document.getElementById('check-numb').innerHTML = result;
-            count++
+            count++;
         }
     }
 

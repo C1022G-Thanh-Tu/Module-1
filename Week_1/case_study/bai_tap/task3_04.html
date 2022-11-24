@@ -5,27 +5,17 @@
     <title>Title</title>
 </head>
 <body>
-<label for="numb-input-js">Nhập số:</label>
-<input type="text" name="" id="numb-input-js" value="" placeholder="Nhập số" oninput="showResult()">
 <div>
     <p id="result"></p>
 </div>
 <script>
-    function showResult() {
-        let numbArray = ['1', '2', '3', '4'];
-        let strArray = ['một', 'hai', 'ba', 'bốn'];
-        let numbInput = document.getElementById('numb-input-js').value;
-        let indexNumb = numbArray.indexOf(numbInput);
-        let result = '';
-        if (indexNumb!=-1) {
-            result = strArray[indexNumb];
-        } else if (numbInput == "") {
-            result = "";
-        } else if (indexNumb == -1) {
-            result = 'Không có kết quả'
-        }
-        document.getElementById('result').innerHTML = result;
+    let strArray = ['không', 'một', 'hai', 'ba', 'bốn', 'năm', 'sáu', 'bảy', 'tám', 'chín'];
+    let numbInput = prompt('Nhập vào 1 số: ');
+    let result = '';
+    for (let i = 0; i < numbInput.length; i++) {
+        result += strArray[numbInput[i]] + ' ';
     }
+    document.getElementById('result').innerHTML = result;
 </script>
 </body>
 </html>
