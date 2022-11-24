@@ -11,25 +11,18 @@
     let quantity = +prompt('Nhập số lượng đồ uống bạn đã chọn');
     let result = 0;
     do {
-        switch (order) {
-            case 'Cafe':
-                result = 120000 * quantity;
-                break;
-            case 'Cam vắt':
-                result = 250000 * quantity;
-                break;
-            case 'Nước ép cà rốt':
-                result = 250000 * quantity;
-                break;
-            case 'Nước ép cà chua':
-                result = 200000 * quantity;
-                break;
-            case 'Nước lọc':
-                result = 100000 * quantity;
-                break;
-            case 'CNước dừa':
-                result = 150000 * quantity;
-                break;
+        if (order === 'Cafe') {
+            result = 120000 * quantity;
+        } else if (order === 'Cam vắt') {
+            result = 250000 * quantity;
+        } else if (order === 'Nước ép cà rốt') {
+            result = 250000 * quantity;
+        } else if (order === 'Nước ép cà chua') {
+            result = 200000 * quantity;
+        } else if (order === 'Nước lọc') {
+            result = 100000 * quantity;
+        } else if (order === 'Nước dừa') {
+            result = 150000 * quantity;
         }
     }
     while(order === 'Tính tiền');
