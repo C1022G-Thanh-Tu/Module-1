@@ -8,34 +8,36 @@
 <script>
     function findMaxValue(arr) {
         let max = arr[0][0];
-        for (let i=0; i<arr.length; i++) {
-            for (let j=0; j<arr[i].length; j++) {
-                if (arr[i][j]>max) {
+        for (let i = 0; i < arr.length; i++) {
+            for (let j = 0; j < arr[i].length; j++) {
+                if (arr[i][j] > max) {
                     max = arr[i][j];
                 }
             }
         }
-        return 'Giá trị lớn nhất trong mảng là: '  + max;
+        return 'Giá trị lớn nhất trong mảng là: ' + max;
     }
+
     function findMinValue(arr) {
         let min = arr[0][0];
-        for (let i=0; i<arr.length; i++) {
-            for (let j=0; j<arr[i].length; j++) {
-                if (arr[i][j]<min) {
+        for (let i = 0; i < arr.length; i++) {
+            for (let j = 0; j < arr[i].length; j++) {
+                if (arr[i][j] < min) {
                     min = arr[i][j];
                 }
             }
         }
-        return 'Giá trị nhỏ nhất trong mảng là: '  + min;
+        return 'Giá trị nhỏ nhất trong mảng là: ' + min;
     }
+
     let array = [];
     let arrLength = prompt('Nhập độ dài của mảng arr');
     let subArray = [];
-    let i,j;
-    for (i=0; i<arrLength; i++) {
+    let i, j;
+    for (i = 0; i < arrLength; i++) {
         let subArrayLength = prompt((`Nhập độ dài của phần tử arr[${i}]`));
         array.push(subArray);
-        for (j=0; j<subArrayLength; j++) {
+        for (j = 0; j < subArrayLength; j++) {
             subArray[j] = prompt(`Nhập phần tử subArray[${j}]`);
         }
     }
