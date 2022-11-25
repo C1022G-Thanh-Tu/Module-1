@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<p id="result"></p>
+<script>
+    let stringInput = prompt('Nhập chuỗi bất kỳ');
+    let newArray = [];
+    let index;
+    for (i=0; i<stringInput.length; i++) {
+        index = newArray.indexOf(stringInput[i]);
+        if (index == -1) {
+            newArray.push(stringInput[i]);
+        }
+    }
+    document.getElementById('result').innerHTML = 'Có tổng cộng ' + newArray.length +' ký tự khác nhau có trong chuỗi, đó là: ' + newArray.join();
+</script>
+</body>
+</html>

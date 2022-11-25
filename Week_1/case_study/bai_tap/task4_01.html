@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let strInput = prompt('Nhập chuỗi bất kỳ');
+    let strArr = strInput.split(' ');
+    let newArray = [];
+    let result = "";
+    for (let i=0; i<strArr.length; i++) {
+        if (strArr[i] != '') {
+            newArray.push(strArr[i]);
+        }
+    }
+    for (let j=0; j<newArray.length; j++) {
+        result += newArray[j][0].toUpperCase() + newArray[j].slice(1).toLowerCase() + ' ';
+    }
+    document.write(result);
+    document.write('</br>');
+    function findLongestWord() {
+        let resultArr = result.split(' ');
+        let max = resultArr[0];
+        for (let i=1; i<resultArr.length; i++) {
+            if (resultArr[i] > max) {
+                max = resultArr[i];
+            }
+        }
+        return max
+    }
+    document.write(' Từ dài nhất trong chuỗi là từ: ' + findLongestWord());
+</script>
+</body>
+</html>

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    function sumEvenNumb(arr) {
+        let sum = 0;
+        for (let i =0; i<arr.length; i++) {
+            for (let j=0; j<arr[i].length; j++) {
+                if (arr[i][j] %2 ==0) {
+                    sum += +arr[i][j];
+                }
+            }
+        }
+        return sum;
+    }
+    let array = [];
+    let arrLength = prompt('Nhập độ dài mảng');
+    let i,j;
+    let subArr = [];
+    for (i=0;i<arrLength; i++) {
+        let subArrLength = prompt(`Nhập độ dài mảng subArr[${i}]`);
+        array.push(subArr);
+        for (j=0; j<subArrLength; j++) {
+            subArr[j] = prompt(`Nhập phần tử subArr[${j}]`);
+        }
+    }
+    console.log(array);
+    document.write(sumEvenNumb(array));
+</script>
+</body>
+</html>
