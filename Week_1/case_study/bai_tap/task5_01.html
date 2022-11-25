@@ -20,15 +20,15 @@
     let array = [];
     let arrLength = prompt('Nhập độ dài mảng');
     let i,j;
-    let subArr = [];
+    let subArr;
     for (i=0;i<arrLength; i++) {
+        subArr = [];
         let subArrLength = prompt(`Nhập độ dài mảng subArr[${i}]`);
         array.push(subArr);
         for (j=0; j<subArrLength; j++) {
             subArr[j] = prompt(`Nhập phần tử subArr[${j}]`);
         }
     }
-    console.log(array);
     document.write(sumEvenNumb(array));
 </script>
 </body>

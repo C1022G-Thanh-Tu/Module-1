@@ -10,48 +10,30 @@
 <div id="bai-tap"></div>
 <div id="result"></div>
 <script>
-    // let array = [5, 1, 3, 5, 6, 7, 5];
-    // let result = "";
-    // let index = 0;
-    // let pushLastKey;
-    // let v = 5;
-    // let check = false;
-    // for (i=0; i<array.length ; i++) {
-    //     if (v === array[i]) {
-    //         check = true;
-    //         index = i;
-    //         array.splice(index, (i+1));
-    //         array.push(0);
-    //         i--;
-    //     }
-    // }
-    // if (check) {
-    //     result = v + ' Có trong mảng';
-    // } else {
-    //     result = v + ' Không có trong mảng';
-    // }
-    // console.log(array);
-    // document.getElementById('bai-tap').innerHTML = result;
-    let array = [];
-    for (i=0; i<5; i++) {
-        array[i] = parseInt(prompt('Nhập số thứ ' + (i+1)));
+    let n = prompt('Nhập độ dài của mảng');
+    let arr = [];
+    let i;
+    for (i=0; i<n; i++) {
+        arr[i] = parseInt(prompt(`Nhập phần tử thứ arr[${i}]`));
     }
-    let result = "";
-    let v = parseInt(prompt('Nhập số nguyên V'));
-    if (array.indexOf(v)!=-1) {
-        result = v + ' Có trong mảng';
-    }
-    for (i=0; i<5; i++) {
-        if (v == array[i]) {
-            for (j=i; j < array.length-1; j++) {
-                array[j] = array[j+1];
+    let v = parseInt(prompt('Nhập số V'));
+    let flag = false;
+    for (i=0; i<n; i++) {
+        if (v == arr[i]) {
+            flag = true
+            for (j=i; j<arr.length-1; j++) {
+                arr[j] = arr[j+1];
             }
-            i--
-            array[array.length-1] = 0;
+            arr[arr.length-1] = 0;
+            i--;
         }
     }
-    console.log(array);
-    document.getElementById('result').innerHTML = result;
+    if (flag) {
+        alert('V có trong mảng');
+    } else {
+        alert('V không có trong mảng');
+    }
+    console.log(arr);
 </script>
 </body>
 </html>

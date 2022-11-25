@@ -20,26 +20,24 @@
         }
     }
     function findPrimeNumb(arr) {
-        let sum = 0;
         let result = "";
         for (i=0; i<arr.length; i++) {
             for (j=0; j<arr[i].length; j++) {
                 if (isPrime(arr[i][j])) {
                     result+=arr[i][j] + ', ';
-                    sum+= +arr[i][j]
                 }
             }
         }
-        return 'Các số nguyên tố trong mảng là: ' + result + '</br>' +
-        'Tổng các số nguyên tố là: ' + sum;
+        return 'Các số nguyên tố trong mảng là: ' + result;
     }
     let array = [];
     let arrLength = prompt('Nhập độ dài mảng');
     let i,j;
-    let subArr = [];
+    let subArr;
     for (i=0;i<arrLength; i++) {
+        subArr = [];
         let subArrLength = prompt(`Nhập độ dài mảng subArr[${i}]`);
-        array.push(subArray);
+        array.push(subArr);
         for (j=0; j<subArrLength; j++) {
             subArr[j] = prompt(`Nhập phần tử subArr[${j}]`);
         }

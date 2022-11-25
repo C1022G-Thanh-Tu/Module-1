@@ -29,16 +29,16 @@
         }
         return 'Giá trị nhỏ nhất trong mảng là: ' + min;
     }
-
     let array = [];
-    let arrLength = prompt('Nhập độ dài của mảng arr');
-    let subArray = [];
-    let i, j;
-    for (i = 0; i < arrLength; i++) {
-        let subArrayLength = prompt((`Nhập độ dài của phần tử arr[${i}]`));
-        array.push(subArray);
-        for (j = 0; j < subArrayLength; j++) {
-            subArray[j] = prompt(`Nhập phần tử subArray[${j}]`);
+    let arrLength = prompt('Nhập độ dài mảng');
+    let i,j;
+    let subArr;
+    for (i=0;i<arrLength; i++) {
+        subArr = [];
+        let subArrLength = prompt(`Nhập độ dài mảng subArr[${i}]`);
+        array.push(subArr);
+        for (j=0; j<subArrLength; j++) {
+            subArr[j] = prompt(`Nhập phần tử subArr[${j}]`);
         }
     }
     document.write(findMaxValue(array));

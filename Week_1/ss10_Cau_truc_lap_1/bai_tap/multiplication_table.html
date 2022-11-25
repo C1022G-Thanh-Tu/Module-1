@@ -20,18 +20,15 @@
 </div>
 </body>
 <script>
-    let i;
-    let j;
-    let table = "<table>";
-    for (i=1; i<11; i++) {
-        table+= "<tr>";
-        for (j=1; j<11; j++) {
-            let result = i*j;
-            table+=  "<td>" + j + ' x ' + i + ' = ' + result + "</td>"
+    let table = '<table>';
+    for (let i=1; i<10; i++) {
+        table+='<tr>';
+        for (let j=2; j<10; j++) {
+            table+='<td>' + j + 'x' + i + '=' + i*j + '</td>';
         }
-        table+= "</tr>";
+        table+='</tr>';
     }
-    table += "</table>";
+    table += '</table>';
     document.getElementById('table').innerHTML = table;
 </script>
 </html>
