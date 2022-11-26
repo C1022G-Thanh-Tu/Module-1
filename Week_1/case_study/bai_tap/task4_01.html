@@ -11,7 +11,7 @@
     let newArray = [];
     let result = "";
     for (let i=0; i<strArr.length; i++) {
-        if (strArr[i] != '') {
+        if (strArr[i] !== '') {
             newArray.push(strArr[i]);
         }
     }
@@ -22,13 +22,13 @@
     document.write('</br>');
     function findLongestWord() {
         let resultArr = result.split(' ');
-        let max = resultArr[0];
-        for (let i=1; i<resultArr.length; i++) {
-            if (resultArr[i] >= max) {
+        let max = 0;
+        for (let i=0; i<resultArr.length; i++) {
+            if (resultArr[i].length >= max) {
                 max = resultArr[i];
             }
         }
-        return max
+        return max;
     }
     document.write(' Từ dài nhất trong chuỗi là từ: ' + findLongestWord());
 </script>
