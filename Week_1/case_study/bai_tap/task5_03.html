@@ -7,7 +7,7 @@
 <body>
 <script>
     function findMaxValue(arr) {
-        let max = arr[0][0];
+        let max = 0;
         for (let i = 0; i < arr.length; i++) {
             for (let j = 0; j < arr[i].length; j++) {
                 if (arr[i][j] > max) {
@@ -37,9 +37,10 @@
         let subArrLength = prompt(`Nhập độ dài mảng subArr[${i}]`);
         array.push(subArr);
         for (j=0; j<subArrLength; j++) {
-            subArr[j] = prompt(`Nhập phần tử subArr[${j}]`);
+            subArr[j] = +prompt(`Nhập phần tử subArr[${j}]`);
         }
     }
+    console.log(array);
     document.write(findMaxValue(array));
     document.write('<br>');
     document.write(findMinValue(array));
