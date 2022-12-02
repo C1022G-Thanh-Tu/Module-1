@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+    table, tr, th, td {
+        border: 1px solid #000;
+        border-collapse: collapse;
+        padding: 5px 20px;
+    }
+    </style>
+</head>
+<body>
+<h3>Quản lý công nhân</h3>
+<table>
+    <tr>
+        <th>STT</th>
+        <th>Họ và tên</th>
+        <th>Ngày sinh</th>
+        <th>Địa chỉ</th>
+        <th>Lương</th>
+        <th>Chức vụ</th>
+    </tr>
+    <tr>
+        <td><p id="order1"></p></td>
+        <td><p id="name1"></p></td>
+        <td><p id="birth1"></p></td>
+        <td><p id="adrress1"></p></td>
+        <td><p id="salary1"></p></td>
+        <td><p id="position1"></p></td>
+    </tr>
+    <tr>
+        <td><p id="order2"></p></td>
+        <td><p id="name2"></p></td>
+        <td><p id="birth2"></p></td>
+        <td><p id="adrress2"></p></td>
+        <td><p id="salary2"></p></td>
+        <td><p id="position2"></p></td>
+    </tr>
+    <tr>
+        <td><p id="order3"></p></td>
+        <td><p id="name3"></p></td>
+        <td><p id="birth3"></p></td>
+        <td><p id="adrress3"></p></td>
+        <td><p id="salary3"></p></td>
+        <td><p id="position3"></p></td>
+    </tr>
+    <tr>
+        <td>...</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+    </tr>
+</table>
+<script>
+    class Worker {
+        constructor(orderedNumb, fullName, dateOfBirth, address, salary, workingPosition) {
+            this.orderedNumb = orderedNumb;
+            this.fullName = fullName;
+            this.dateOfBirth = dateOfBirth;
+            this.address = address;
+            this.salary = salary;
+            this.workingPosition = workingPosition;
+        }
+    }
+    let worker1 = new Worker('1', 'Trương Tấn A', '11-11-1997', 'Quảng Nam', '2000', 'Abc');
+    let worker2 = new Worker('2', 'Trương Tấn B', '11-11-1998', 'Đà Nẵng', '2000', 'Abc');
+    let worker3 = new Worker('3', 'Trương Tấn C', '11-11-1999', 'Huế', '2000', 'Abc');
+    document.getElementById('order1').innerHTML = worker1.orderedNumb;
+    document.getElementById('name1').innerHTML = worker1.fullName;
+    document.getElementById('birth1').innerHTML = worker1.dateOfBirth;
+    document.getElementById('adrress1').innerHTML = worker1.address;
+    document.getElementById('salary1').innerHTML = worker1.fullName;
+    document.getElementById('position1').innerHTML = worker1.dateOfBirth;
+    document.getElementById('order2').innerHTML = worker2.orderedNumb;
+    document.getElementById('name2').innerHTML = worker2.fullName;
+    document.getElementById('birth2').innerHTML = worker2.dateOfBirth;
+    document.getElementById('adrress2').innerHTML = worker2.address;
+    document.getElementById('salary2').innerHTML = worker2.fullName;
+    document.getElementById('position2').innerHTML = worker2.dateOfBirth;
+    document.getElementById('order3').innerHTML = worker3.orderedNumb;
+    document.getElementById('name3').innerHTML = worker3.fullName;
+    document.getElementById('birth3').innerHTML = worker3.dateOfBirth;
+    document.getElementById('adrress3').innerHTML = worker3.address;
+    document.getElementById('salary3').innerHTML = worker3.fullName;
+    document.getElementById('position3').innerHTML = worker3.dateOfBirth;
+</script>
+</body>
+</html>

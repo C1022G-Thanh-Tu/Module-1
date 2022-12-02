@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<script>
+    let arr = [];
+    let n = prompt('Nhập chiều dài mảng');
+    let sum = 0;
+    for (let i = 1; i < n; i++) {
+        arr[i] = prompt(`Nhập phần tử arr[${i}]`);
+    }
+    console.log(arr);
+    for (let j = 1; j < n; j++) {
+        if (arr[j] % 3 === 0) {
+            sum += arr[j];
+        }
+    }
+    document.write(sum);
+</script>
+</body>
+</html>
