@@ -1,8 +1,0 @@
-Begin
-  INPUT N là số ngẫu nhiên trong khoảng 0-9
-  INPUT M
-  IF N==M
-    OUTPUT "Dự đoán đúng"         
-  ELSE             
-    OUTPUT "Dự đoán sai" 
-End
